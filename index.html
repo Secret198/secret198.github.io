@@ -4,8 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello world</h1>
+    <header>
+        <h1>Ákos Korbel</h1>
+        <h2>University student</h2>
+        <div class="links">
+            <a href="https://github.com/Secret198" class="iconLink" target="_blank"><img id="githubIcon" onmouseover="changeIcon(this, 'images/github-iconDark.webp')" onmouseleave="changeIcon(this, 'images/github-icon.webp')" src="images/github-icon.webp" alt="github icon"></a>
+            <a href="https://www.linkedin.com/in/korbel-%C3%A1kos-05934a368/?locale=en_US" class="iconLink" target="_blank"><img id="githubIcon" onmouseover="changeIcon(this, 'images/linkedin-iconDark.webp')" onmouseleave="changeIcon(this, 'images/linkedin-icon.webp')" src="images/linkedin-icon.webp" alt="github icon"></a>
+        </div>
+        <div class="wave">
+        <svg preserveAspectRatio="none" width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+            .path-0{
+                animation:pathAnim-0 4s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            @keyframes pathAnim-0{
+                0%{
+                d: path("M 0,400 L 0,150 C 61.94808541973491,138.70949926362297 123.89617083946982,127.41899852724593 184,121 C 244.10382916053018,114.58100147275407 302.36340206185565,113.03350515463919 358,144 C 413.63659793814435,174.9664948453608 466.65022091310755,238.44698085419734 533,221 C 599.3497790868925,203.55301914580266 679.0357142857142,105.17857142857142 742,103 C 804.9642857142858,100.82142857142858 851.2069219440353,194.83873343151697 907,198 C 962.7930780559647,201.16126656848303 1028.1365979381442,113.46649484536083 1083,77 C 1137.8634020618558,40.53350515463917 1182.2466863033874,55.295287187039776 1240,76 C 1297.7533136966126,96.70471281296022 1368.8766568483063,123.35235640648011 1440,150 L 1440,400 L 0,400 Z");
+                }
+                25%{
+                d: path("M 0,400 L 0,150 C 73.07492636229749,136.8407584683358 146.14985272459498,123.68151693667157 197,125 C 247.85014727540502,126.31848306332843 276.47551546391753,142.11469072164945 334,168 C 391.52448453608247,193.88530927835055 477.948085419735,229.8597201767305 547,207 C 616.051914580265,184.1402798232695 667.7321428571428,102.44642857142856 719,93 C 770.2678571428572,83.55357142857144 821.1233431516939,146.35456553755523 873,145 C 924.8766568483061,143.64543446244477 977.7744845360824,78.13530927835052 1046,87 C 1114.2255154639176,95.86469072164948 1197.7787187039764,179.10419734904272 1266,202 C 1334.2212812960236,224.89580265095728 1387.1106406480117,187.44790132547865 1440,150 L 1440,400 L 0,400 Z");
+                }
+                50%{
+                d: path("M 0,400 L 0,150 C 65.53884388807069,144.47938144329896 131.07768777614137,138.95876288659792 191,152 C 250.92231222385863,165.04123711340208 305.22809278350513,196.64432989690724 362,199 C 418.77190721649487,201.35567010309276 478.0099410898381,174.46391752577318 538,151 C 597.9900589101619,127.53608247422682 658.7321428571428,107.50000000000003 719,128 C 779.2678571428572,148.49999999999997 839.0614874815907,209.5360824742268 897,208 C 954.9385125184093,206.4639175257732 1011.0219072164946,142.3556701030928 1077,143 C 1142.9780927835054,143.6443298969072 1218.8508836524302,209.04123711340208 1281,221 C 1343.1491163475698,232.95876288659792 1391.574558173785,191.47938144329896 1440,150 L 1440,400 L 0,400 Z");
+                }
+                75%{
+                d: path("M 0,400 L 0,150 C 63.744845360824755,160.46686303387332 127.48969072164951,170.93372606774668 179,182 C 230.5103092783505,193.06627393225332 269.7860824742268,204.73195876288662 338,211 C 406.2139175257732,217.26804123711338 503.36597938144325,218.13843888070693 564,214 C 624.6340206185567,209.86156111929307 648.7499999999999,200.7142857142857 704,196 C 759.2500000000001,191.2857142857143 845.6340206185569,191.00441826215024 905,166 C 964.3659793814431,140.99558173784976 996.713917525773,91.2680412371134 1057,87 C 1117.286082474227,82.7319587628866 1205.5103092783506,123.92341678939619 1274,142 C 1342.4896907216494,160.07658321060381 1391.2448453608247,155.0382916053019 1440,150 L 1440,400 L 0,400 Z");
+                }
+                100%{
+                d: path("M 0,400 L 0,150 C 61.94808541973491,138.70949926362297 123.89617083946982,127.41899852724593 184,121 C 244.10382916053018,114.58100147275407 302.36340206185565,113.03350515463919 358,144 C 413.63659793814435,174.9664948453608 466.65022091310755,238.44698085419734 533,221 C 599.3497790868925,203.55301914580266 679.0357142857142,105.17857142857142 742,103 C 804.9642857142858,100.82142857142858 851.2069219440353,194.83873343151697 907,198 C 962.7930780559647,201.16126656848303 1028.1365979381442,113.46649484536083 1083,77 C 1137.8634020618558,40.53350515463917 1182.2466863033874,55.295287187039776 1240,76 C 1297.7533136966126,96.70471281296022 1368.8766568483063,123.35235640648011 1440,150 L 1440,400 L 0,400 Z");
+                }
+            }
+            </style><path d="M 0,400 L 0,150 C 61.94808541973491,138.70949926362297 123.89617083946982,127.41899852724593 184,121 C 244.10382916053018,114.58100147275407 302.36340206185565,113.03350515463919 358,144 C 413.63659793814435,174.9664948453608 466.65022091310755,238.44698085419734 533,221 C 599.3497790868925,203.55301914580266 679.0357142857142,105.17857142857142 742,103 C 804.9642857142858,100.82142857142858 851.2069219440353,194.83873343151697 907,198 C 962.7930780559647,201.16126656848303 1028.1365979381442,113.46649484536083 1083,77 C 1137.8634020618558,40.53350515463917 1182.2466863033874,55.295287187039776 1240,76 C 1297.7533136966126,96.70471281296022 1368.8766568483063,123.35235640648011 1440,150 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#415a77" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+        </svg>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h3>elem1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quaerat veniam perferendis quidem ratione, id cumque consequuntur soluta sit. Modi iste rem culpa eos inventore ducimus! Repellat omnis voluptatibus odit.</p>
+            <p class="flag">technology used</p>
+        </div>
+        <div>
+            <h3>elem1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quaerat veniam perferendis quidem ratione, id cumque consequuntur soluta sit. Modi iste rem culpa eos inventore ducimus! Repellat omnis voluptatibus odit.</p>
+            <p class="flag">technology used</p>
+        </div>
+        <div>
+            <h3>elem1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quaerat veniam perferendis quidem ratione, id cumque consequuntur soluta sit. Modi iste rem culpa eos inventore ducimus! Repellat omnis voluptatibus odit.</p>
+            <p class="flag">technology used</p>
+        </div>
+        <div>
+            <h3>elem1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quaerat veniam perferendis quidem ratione, id cumque consequuntur soluta sit. Modi iste rem culpa eos inventore ducimus! Repellat omnis voluptatibus odit.</p>
+            <p class="flag">technology used</p>
+        </div>
+        <div>
+            <h3>elem1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quaerat veniam perferendis quidem ratione, id cumque consequuntur soluta sit. Modi iste rem culpa eos inventore ducimus! Repellat omnis voluptatibus odit.</p>
+            <p class="flag">technology used</p>
+        </div>
+        <div>
+            <h3>elem1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quaerat veniam perferendis quidem ratione, id cumque consequuntur soluta sit. Modi iste rem culpa eos inventore ducimus! Repellat omnis voluptatibus odit.</p>
+            <p class="flag">technology used</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
