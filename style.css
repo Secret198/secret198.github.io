@@ -4,6 +4,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: "Michroma";
 }
 
 
@@ -18,16 +19,65 @@ header{
 main{
     background-color: #415A77;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 20px;
     gap: 20px;
-    height: 100vh;
 }
 
-main>div{
+
+.elem{
+    padding: 15px;
+    border-radius: 5px;
     background-color: rgb(27, 38, 59) ;
-    height: 300px;
+    box-shadow: 0px 0px 10px rgb(101, 141, 187) inset;
+
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
 }
 
+.elem::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #2a7db4;
+    transition: width 0.3s ease-in-out;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.elem:hover::before{
+    width: 100%;
+}
+
+.elem>img{
+    width: 80%;
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.elem>h3{
+    text-align: center;
+}
+
+.elem>p{
+    text-align: justify;
+}
+
+.flag{
+    background-color: #CCDBDC;
+    color: #5d6566;
+    border: 1px solid #5d6566;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 h1{
     font-family: Michroma;
@@ -68,7 +118,6 @@ h1, h2{
     position: absolute;
     width: 100%;
     bottom: -5px;
-    /* max-height: 200px; */
 }
 
 .wave>svg{
@@ -76,3 +125,26 @@ h1, h2{
     width: 100%;
 }
 
+@media(max-width: 1700px){
+    main{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 1500px){
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 1100px){
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 700px){
+    main{
+        grid-template-columns: 1fr;
+    }
+}
