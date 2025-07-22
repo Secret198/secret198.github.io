@@ -27,31 +27,26 @@ main{
 
 .elem{
     padding: 15px;
+    padding-bottom: 30px;
     border-radius: 5px;
     background-color: rgb(27, 38, 59) ;
     box-shadow: 0px 0px 10px rgb(101, 141, 187) inset;
 
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    z-index: 1;
 }
 
-.elem::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: #2a7db4;
-    transition: width 0.3s ease-in-out;
-    border-radius: 5px;
-    z-index: -1;
+.elem>div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
 }
 
-.elem:hover::before{
-    width: 100%;
+.elem>div>a{
+    color: #7db9e0;
+    text-decoration: none;
+}
+
+.elem>div>a:hover{
+    text-decoration: underline;
 }
 
 .elem>img{
